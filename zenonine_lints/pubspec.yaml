@@ -1,5 +1,5 @@
 name: zenonine_lints
-version: 0.0.2
+version: 0.1.0
 description: Lint rules for Dart and Flutter used in ZenoNine's packages.
 homepage: https://github.com/zenonine/flutter_lints
 repository: https://github.com/zenonine/flutter_lints
