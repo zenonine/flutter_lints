@@ -1,0 +1,34 @@
+name: Verify
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: zenonine_lints
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: subosito/flutter-action@v1
+
+      - run: flutter config --no-analytics
+      - run: flutter --version
+
+      - name: Install dependencies
+        run: flutter packages get
+
+      - name: Verify formatting
+        run: flutter format --set-exit-if-changed lib test
+
+      - name: Source code static analysis
+        run: flutter analyze --fatal-infos
+
+      - name: Verify puslishing
+        run: flutter packages publish --dry-run
