@@ -11,6 +11,9 @@
     <a href="https://pub.dev/packages/zenonine_lints">
       <img src="https://img.shields.io/pub/v/zenonine_lints.svg" alt="pub package">
     </a>
+    <a href="https://opensource.org/licenses/BSD-3-Clause">
+      <img src="https://img.shields.io/badge/License-BSD_3--Clause-blue.svg" alt="license">
+    </a>
     <a href="https://github.com/zenonine/flutter_lints/actions/workflows/verify.yml">
       <img src="https://github.com/zenonine/flutter_lints/actions/workflows/verify.yml/badge.svg?branch=master" alt="verify">
     </a>
@@ -39,3 +42,4 @@ include: package:zenonine_lints/analysis_options.yaml
 
 * https://dart.dev/guides/language/analysis-options
 * https://dart-lang.github.io/linter/lints/index.html
+* https://github.com/VeryGoodOpenSource/very_good_analysis
